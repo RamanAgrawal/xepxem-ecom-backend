@@ -21,7 +21,7 @@ app.use(express.urlencoded({extended: true, limit: "16kb"}));
 app.use(express.static("public"));
 
 app.get('/', (req, res) =>{
-    send('fine :::')
+    res.send('fine :::')
     
 })
 app.use("/api/v1", router)
